@@ -1,0 +1,14 @@
+@using BOL;
+
+@{
+ViewData["Title"]="Details page";
+}
+<h1>@ViewData["Title"]</h1>
+@{
+    College vs =(College)ViewData["colleges"];
+    <p>@vs.Id</p>
+    <p>@vs.Name</p>
+    <p>@vs.Email</p>
+    <p>@vs.Pin</p>
+}
+
